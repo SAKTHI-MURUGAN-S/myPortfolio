@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakthimurugan S - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary: #3498db;
@@ -52,8 +51,8 @@
         }
 
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             border: 5px solid white;
             overflow: hidden;
@@ -65,6 +64,13 @@
             justify-content: center;
             color: white;
             font-size: 60px;
+            position: relative;
+        }
+
+        .profile-img img {
+            position: absolute;
+            width:195px;
+            height: 200px;
         }
 
         .profile-text h1 {
@@ -218,10 +224,6 @@
             background: linear-gradient(to right, var(--accent), #ff6b6b);
         }
 
-        .btn-view {
-            background: linear-gradient(to right, #e74c3c, #ff6b6b);
-        }
-
         .btn i {
             margin-right: 5px;
         }
@@ -257,12 +259,12 @@
     <header>
         <div class="container">
             <div class="profile">
-                <div class="profile-img"><i class="fas fa-user"></i></div>
+                <div class="profile-img"><img src="img/1000709245.jpg"></div>
                 <div class="profile-text">
                     <h1>SAKTHIMURUGAN S</h1>
                     <h2>Bachelor of Computer Application</h2>
                     <div class="contact-info">
-                        <a href="tel:+916374537712"><i class="fas fa-phone"></i> +91 6374537712</a>
+                        <a href="tel:+91 63745 37712"><i class="fas fa-phone"></i> +91 63745 37712</a>
                         <a href="mailto:sakthimurugan.selvarasu@gmail.com"><i class="fas fa-envelope"></i> Email</a>
                         <a href="#"><i class="fas fa-map-marker-alt"></i> Chennai, India</a>
                         <a href="https://linkedin.com/in/sakthimurugan-s-377b1236b" target="_blank"><i
@@ -299,10 +301,14 @@
                 <div class="skill-chip">CSS</div>
                 <div class="skill-chip">JavaScript</div>
                 <div class="skill-chip">Bootstrap</div>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-code"></i> Tools</h2>
+            <div class="skills">
                 <div class="skill-chip">Power BI</div>
-                <div class="skill-chip">VS Code</div>
-                <div class="skill-chip">OOP</div>
-                <div class="skill-chip">Data Structures</div>
+                <div class="skill-chip">Visual Studio Code</div>
+                <div class="skill-chip">MS Office Suite</div>
             </div>
         </section>
 
@@ -389,7 +395,8 @@
             <div style="text-align:center; margin-top:20px;">
 
                 <!-- VIEW BUTTON -->
-                <a href="https://drive.google.com/file/d/1pNr7AVWTmNy9uEwZSvWoymFIXKY4LU6m/view?usp=sharing" target="_blank" class="btn btn-view">
+                <a href="https://drive.google.com/file/d/1pNr7AVWTmNy9uEwZSvWoymFIXKY4LU6m/view?usp=sharing"
+                    target="_blank" class="btn btn-view">
                     <i class="fas fa-eye"></i> View Resume
                 </a>
 
